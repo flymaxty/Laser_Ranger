@@ -1,0 +1,12 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+FIND_PACKAGE(OpenCV REQUIRED)
+
+ADD_EXECUTABLE(sample sample.cpp)
+TARGET_LINK_LIBRARIES(sample ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(sample_cam sample_cam.cpp)
+TARGET_LINK_LIBRARIES(sample_cam ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(capture capture.cpp)
+TARGET_LINK_LIBRARIES(capture ${OpenCV_LIBS})
